@@ -1,11 +1,14 @@
-$main-color: #fa6604;
-$second-color: #558253;
+$main-color: #44aed1;
+$second-color: #7f68ce;
 $darker-color: darken($main-color, 20%);
 $lighter-color: lighten($main-color, 20%);
 
-$navBgDefault: #585758;
-$navBgHighlight: #fa6604;
-$navDefault: #ffffff;
-$navHighlight: #f7efc4;
+$bgDefault: #00c3cc;
+$bgHighlight: #7f68ce;
+$colDefault: #ecf0f1;
+$colHighlight: #8eeff4;
 
-$darkGray: #585758;
+$navBgDefault: #ffffff;
+$navBgHighlight: #7f68ce;
+$navDefault: #000000;
+$navHighlight: #ffffff;

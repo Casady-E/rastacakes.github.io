@@ -12,8 +12,8 @@
 
 // Base stuff
 @import "base/typography";
-@import "base/colors";
 @import "base/normalize";
+@import "base/colors";
 
 // Layout related stylesheets
 @import "layout/grid";
@@ -26,12 +26,13 @@
 // Components and modules
 @import "components/carousel";
 @import "components/buttons";
-@import "components/calloutbox";
 @import "components/cover";
 @import "components/dropdown";
 
 // Page-specific stylesheets
 @import "pages/index";
+@import "pages/about";
+@import "pages/portfolio";
 @import "pages/contact";
 
 // Themes

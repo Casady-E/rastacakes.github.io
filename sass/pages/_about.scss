@@ -1,0 +1,40 @@
+.about-container {
+  width: 100%;
+  padding: 0vh;
+  margin-bottom: 10vh;
+  h2 {
+    font-size: 4em;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10vh;
+    width: 100%;
+    background-color: #ef8087;
+    color: #ffffff;
+    padding: 5vh;
+  }
+  .about-icon-container{
+    padding: 0 10vh;
+    @include breakpoint(medium){
+    padding: 0 10vh;
+  }
+  @include breakpoint(small){
+    padding: 0 5vh;
+  }
+    .about-item{
+      display: inline-block;
+     text-align: center;
+
+     .about-icon {
+      color: $main-color;
+      margin-bottom: 0.5em;
+     }
+    h3 {
+       font-size: 2em;
+       font-weight: 700;
+    }
+    p{
+      font-size: 1.25em;
+    }
+    }
+  }
+}

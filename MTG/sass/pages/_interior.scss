@@ -80,8 +80,11 @@
         background-color: $main-color;
         h3{
           color: #ffffff;
-          padding: 0 10vh 5vh 10vh;
+          padding: 0 10vw 5vh 10vw;
         font-size: 1.5em;
+        @include breakpoint(small){
+          padding: 0 0vw 5vh 0vw;
+        }
 
       }
     }
@@ -105,7 +108,7 @@
           width: 100%;
           padding: 0 5vw;
           @include breakpoint(medium){
-            padding: 0;
+            padding: 0 0;
           }
         }
         h3 {

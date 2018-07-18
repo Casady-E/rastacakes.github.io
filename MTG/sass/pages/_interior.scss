@@ -117,16 +117,34 @@
     .service-container{
       padding: 5vh 0vw 10vh 0vw;
       @include breakpoint(small){
-        padding: 5vh 0vw 5vh 0vw;
+        padding: 5vh 0vw 0vh 0vw;
       }
+      .img-container{
+        width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+        img{
+        min-height: 20vh;
+        max-height: 150vh;
+        width: 100%;
+        @include aspect-ratio(16, 9);
+        }
+      }
+
     .service-content{
       padding: 0vh 5vw 0vh 5vw;
       .content-head{
       padding: 5vh 10vw 5vh 10vw;
+      @include breakpoint(small){
+        padding: 5vh 0vw 5vh 10vw;
+      }
   h2{
     font-weight: 700;
     text-align: center;
     font-size: 3em;
+    color: $main-color;
   }
   p{
     font-size: 1em;
@@ -135,98 +153,29 @@
 }
 .content-body{
   width: 100%;
-  margin: auto;
+  margin: 0vh 0vw 5vh 0vw;
   padding: auto;
   text-align: center;
   h3{
     font-weight: 700;
     text-align: left;
     font-size: 3em;
+    color: $main-color;
   }
   h4 {
     text-align: left;
     font-size: 1.5em;
+    color: $main-color;
   }
   p{
     text-align: left;
   }
-}
-
-}
-}
-}
-
-
-
-    // DELETE AFTER FIXING
-      .nav-tabs .nav-link {
-        border-color: #cccccc;
-        color: #000000;
-        &:hover {
-          background-color: $main-color;
-          color: #ffffff;
-        }
-      }
-      .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-        background-color: $darkGray;
-        color: #ffffff;
-        border-color: #ffffff;
-      }
-      .tab-content{
-        padding-top: 5vh;
-        .tab-pane {
-          margin: auto;
-          width: 100%;
-          padding: 0 5vw;
-          @include breakpoint(medium){
-            padding: 0 0;
-          }
-        }
-        h3 {
-          font-size: 3em;
-        }
-        h4{
-          font-size: 2em;
-        }
-      }
-
-
-
-
-  }
-
-  .network-page{
-    .interior-content{
-    .service-description{
-    background-color: $main-color;
-    }
-  }
-}
-  .recycle-page{
-    .interior-content{
-    .service-description{
-    background-color: $second-color;
-    h3{
-    color: #fffb99;
-  }
-    }
+  .content-item{
+    margin-bottom: 10vh;
   }
 }
 
-.lifecycle-page{
-  .interior-content{
-  .service-description{
-  background-color: #5f6ebf;
-  }
 }
 }
-.about-page{
-  .interior-content{
-  .service-description{
-  background-color: #ffffff;
-  h3 {
-    color: #000000;
-  }
-  }
 }
 }

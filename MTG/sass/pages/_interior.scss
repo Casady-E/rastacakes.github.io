@@ -125,6 +125,9 @@
         overflow: hidden;
         margin: 0px;
         padding: 0px;
+        @include breakpoint(small){
+          height: 30vh;
+        }
         img{
         min-height: 20vh;
         max-height: 150vh;
@@ -172,6 +175,12 @@
   }
   .content-item{
     margin-bottom: 10vh;
+    @include breakpoint(large){
+   padding: 0vh 10vh;
+    }
+
+
+
   }
 }
 

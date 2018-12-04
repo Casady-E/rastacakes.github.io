@@ -1,4 +1,7 @@
 .interior-head-section{
+  .legal-head{
+    height: 5vh;
+  }
 .interior-head{
   max-height: 70vh;
   min-height:50vh;
@@ -104,20 +107,19 @@
         padding: 0 15vw 5vh 15vw;
       font-size: 1.5em;
 
-      @include breakpoint(small){
-        padding: 0 5vw 0vh 5vw;
-      }
-      @include breakpoint(xsmall){
+      @include breakpoint(medium){
         font-size: 1em;
-        font-weight: 700;
+      }
+      @include breakpoint(small){
+        padding: 0 5vw 5vh 5vw;
       }
       }
     }
 
     .service-container{
-      padding: 0vh 0vw 0vh 0vw;
+      padding: 5vh 0vw 0vh 0vw;
       @include breakpoint(small){
-        padding: 0vh 0vw 0vh 0vw;
+        padding: 5vh 0vw 0vh 0vw;
       }
       .img-container{
         width: 100%;
@@ -128,7 +130,6 @@
         @include breakpoint(small){
           height: 30vh;
         }
-        margin: 5vh 0vw 5vh 0vw;
 
         img{
         min-height: 20vh;
@@ -186,6 +187,16 @@
   }
 }
 
+}
+}
+.legal-content{
+  margin:auto;
+
+  h1, h3{
+    font-weight: 700;
+  }
+  .all-caps{
+    text-transform: uppercase;
 }
 }
 }

@@ -25,9 +25,36 @@
       color: #ffffff;
       padding: 2vh 2vw;
       background-color: $second-color;
+      border-radius: 25px;
     }
 }
 }
+.intro-sell{
+  height: relative;
+  width: 90%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin: auto;
+  .intro-sell-desc{
+    height: 100%;
+    margin: auto;
+  }
+  .intro-sell-triple{
+    .triple-item{
+      img{
+        width: inherit;
+        max-width: 50vw;
+        position: absolute;
+        margin: auto;
+        @include aspect-ratio(16, 9);
+      }
+      a{
+        color:$second-color;
+      }
+    }
+  }
+}
+
 .intro-services{
   height: relative;
   width: 90%;
@@ -42,7 +69,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 5%;
+    border-radius: 25px;
     border: 5px;
     border-style: solid;
     border-width: thin;
@@ -62,9 +89,8 @@
       .services-button{
         background-color: $second-color;
         color: #ffffff;
-        border-radius: 10%;
+        border-radius: 25px;
         @include breakpoint(small){
-          border-radius: 15%;
           margin: 0 15vh 0 15vh;
           margin-top: 5vh;
           margin-bottom: 2vh;
@@ -96,6 +122,7 @@
     .service-card-icon{
       text-align: center;
       margin: auto;
+      margin-top: 5vh;
       top: 0;
       right: 0;
       z-index: 1;
@@ -137,4 +164,41 @@
       }
     }
   }
+}
+.intro-case-study{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20vh;
+  h2{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+.case-study-body{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.case-study-item{
+  margin: auto;
+  overflow: hidden;
+  border-radius: 25px;
+  max-height: 60vh;
+  background-color: $second-color;
+  text-align: left;
+  margin-bottom: 5vh;
+  &:hover{
+    max-height: 70vh;
+    -webkit-transition-property: max-height;
+    transition-property: max-height;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
+  .case-study-desc{
+    padding: 5vh 2.5vw 0 2.5vw;
+    color: #ffffff;
+  }
+}
 }

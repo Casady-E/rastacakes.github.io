@@ -6,7 +6,6 @@
   padding: 25vh 10vw;
   overflow: hidden;
   z-index: 2;
-  overflow: hidden;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/pineapple-bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pineapple-bg.jpg);
   background-size: 100% auto;
@@ -61,7 +60,6 @@
   }
 }
 .intro-sell{
-  height: relative;
   width: 100%;
   padding: 10vh 5vw 10vh 5vw;
   margin: auto;
@@ -92,6 +90,23 @@
   width: 90%;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  .intro-services-head{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5vh;
+    a{
+      text-decoration: none;
+      color: #000000;
+      text-align: center;
+      &:hover{
+        color: $second-color;
+      }
+      h2{
+        font-size: 3em;
+        font-weight: 700;
+      }
+    }
+  }
   .intro-services-card{
     height: inherit;
     background-color: #ffffff;
@@ -244,6 +259,7 @@
   h2{
     font-size: 3em;
     text-align: center;
+    font-weight: 700;
   }
   a{
     text-decoration: none;

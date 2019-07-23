@@ -25,12 +25,11 @@
     bottom: 2vh;
   }
   @include breakpoint(small){
-    padding: 1vh 2vw;
-    left: 5vw;
+    padding: 2vh 2vw;
     bottom: 2vh;
   }
   @include breakpoint(xsmall){
-    padding: 1vh 2vw;
+    padding: 2vh 2vw;
     left: 5vw;
     bottom: 2vh;
   }

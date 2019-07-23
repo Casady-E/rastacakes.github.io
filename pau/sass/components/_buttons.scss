@@ -21,9 +21,15 @@
   border-radius: 25px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  @include breakpoint(xsmall){
+  @include breakpoint(small){
+    padding: 1vh 2vw;
     left: 5vw;
-    bottom: 5vh;
+    bottom: 2vh;
+  }
+  @include breakpoint(xsmall){
+    padding: 1vh 2vw;
+    left: 5vw;
+    bottom: 2vh;
   }
 }
 

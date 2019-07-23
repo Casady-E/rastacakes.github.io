@@ -22,12 +22,17 @@
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   @include breakpoint(medium){
-    bottom: 10vh;
+    bottom: 15vh;
+    right:5vw;
+  }
+  @include breakpoint(small){
+    padding: 5vh 5vw;
+    bottom: 15vh;
   }
   @include breakpoint(xsmall){
-    padding: 2vh 5vw;
+    padding: 5vh 5vw;
     right:5vw;
-    bottom: 20vh;
+    bottom: 15vh;
   }
 }
 

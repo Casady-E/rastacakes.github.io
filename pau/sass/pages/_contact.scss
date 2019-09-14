@@ -20,5 +20,8 @@
   .form-container{
     width: 100%;
     margin: auto;
+    @include breakpoint(xsmall){
+      padding: 0 5vw;
+    }
   }
 }
